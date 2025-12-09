@@ -1,6 +1,6 @@
 # 🧗‍♂️ Climb Training App
 
-A **local-first climbing training planner** designed for structured long-term progression, especially for adult climbers (30–50+).  
+A **climbing training planner** designed for structured long-term progression, especially for adult climbers (40+).  
 Built with **React Native + Expo**, the app focuses on sustainable training cycles, clear weekly planning, and future integration with Garmin and AI insights.
 
 ---
