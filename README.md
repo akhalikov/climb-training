@@ -1,50 +1,130 @@
-# Welcome to your Expo app 👋
+# 🧗‍♂️ Climb Training App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A **local-first climbing training planner** designed for structured long-term progression, especially for adult climbers (30–50+).  
+Built with **React Native + Expo**, the app focuses on sustainable training cycles, clear weekly planning, and future integration with Garmin and AI insights.
 
-## Get started
+---
 
-1. Install dependencies
+## 📑 Table of Contents
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Screens & Workflow](#screens--workflow)
+- [Documentation](#documentation)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Roadmap](#roadmap)
+- [License](#license)
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+## 🧭 Project Overview
 
-   ```bash
-   npx expo start
-   ```
+The Climb Training App helps climbers plan and perform structured training by providing:
 
-In the output, you'll find options to open the app in a
+- **Macrocycle planning** (Base → Build → Deload → Taper)
+- **Weekly training calendars**
+- **Session editing and tracking**
+- **Warm-up and mobility emphasis**
+- **Future AI insights & Garmin recovery integration**
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+The goal is to provide the clarity and structure needed by climbers who cannot simply “just climb more” — especially climbers balancing work, age-related recovery factors, and injury prevention.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## ⭐ Features
 
-When you're ready, run:
+### ✔ MVP Features (in development)
+- View a 12-week macrocycle with phases  
+- Weekly training calendar view  
+- Session editor (type, description, notes)  
+- Local data storage (SQLite)  
+- Age- and goal-based user settings  
+- Local-first architecture (offline support)
 
-```bash
-npm run reset-project
+### 🔧 Upcoming (Short Term)
+- Weekly templates  
+- Load/intensity calculation  
+- Better session types (Climbing, Strength, Fingerboard, Mobility, etc.)  
+- Warm-up/mobility blocks  
+- Drag & drop session rescheduling
+
+### 🔮 Future Enhancements
+- AI weekly insights & auto-regulated training  
+- Garmin HRV/sleep/stress integration  
+- Cloud sync (Next.js + Prisma backend)  
+- Performance tracking dashboards  
+- Multi-device support
+
+---
+
+## 🖥 Screens & Workflow
+
+The app currently includes:
+
+1. **Macrocycle Screen** – list of weeks & phases  
+2. **Week View** – high-level calendar layout for each week  
+3. **Session Editor** – modify daily training sessions  
+4. **Settings Screen** – configure age, goals, and start date  
+
+All data is stored locally in SQLite and designed to sync with a backend in future versions.
+
+---
+
+## 📘 Documentation
+
+Full design documentation is located in the repository:
+
+- **Design Document**  
+  👉 [`docs/design.md`](./docs/design.md)
+
+A detailed roadmap is available here:
+
+- **Roadmap**  
+  👉 [`docs/roadmap.md`](./docs/roadmap.md)  
+
+More docs coming soon:
+- Architecture  
+- Data Model
+
+---
+
+## 🛠 Tech Stack
+
+- **React Native (Expo)**
+- **TypeScript**
+- **Expo Router**
+- **SQLite (expo-sqlite)**
+- **Zustand** for lightweight state management
+- JSON-based macrocycle configuration  
+- Future backend-ready architecture using:
+  - Next.js  
+  - Prisma  
+  - PostgreSQL  
+
+---
+
+## 🚀 Getting Started
+
+> 💡 This project uses Expo. Make sure you have Node.js installed.
+
+### 1. Clone the repository
+```sh
+git clone https://github.com/akhalikov/climb-training.git
+cd climb-training
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2. Install dependencies
+```bash
+npm install
+```
 
-## Learn more
+### 3. Start the development server
+```bash
+npx expo start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+### 4. Run on your device
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- Press a for Android emulator
+- Press i for iOS simulator (macOS only)
+- Scan QR code using Expo Go app
